@@ -16,7 +16,7 @@
                                     {{ __('LogIn with Facebook') }}
                                 </a>
 
-                                <a href="#" class="btn btn-primary">
+                                <a href="{{ route('google.redirect') }}" class="btn btn-primary">
                                     {{ __('LogIn with Gmail') }}
                                 </a>
                                
