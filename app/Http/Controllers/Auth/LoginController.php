@@ -76,6 +76,7 @@ class LoginController extends Controller
         } else {
             // create a new user
             $newUser                  = new User;
+            $newUser->password        = bcrypt('password123');
             $newUser->name            = $user->name;
             $newUser->email           = $user->email;
             $newUser->google_id       = $user->id;
