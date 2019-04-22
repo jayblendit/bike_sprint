@@ -42,6 +42,12 @@ return [
             'secret' => env('STRIPE_WEBHOOK_SECRET'),
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
+
+    'facebook' => [
+       'client_id' => '396975470899380',
+       'client_secret' => 'd72f72848f487d0c18cc3fe598827daf',
+       'redirect' => 'http://localhost:8000/callback',
+      ],
     ],
 
 ];
