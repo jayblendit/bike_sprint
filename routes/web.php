@@ -18,3 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacy.policy');
