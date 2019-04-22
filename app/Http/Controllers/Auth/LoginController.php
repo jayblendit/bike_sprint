@@ -55,16 +55,18 @@ class LoginController extends Controller
      */
     public function googleHandleProviderCallback()
     {
-        
+
         try {
             $user = Socialite::driver('google')->user();
         } catch (\Exception $e) {
             return redirect('/login');
         }
+
         // only allow people with @company.com to login
-       /* if(explode("@", $user->email)[1] !== 'company.com'){
-            return redirect()->to('/');*/
-        }
+        /* if(explode("@", $user->email)[1] !== 'company.com'){
+            return redirect()->to('/');
+        }*/
+
         // check if they're an existing user
         $existingUser = User::where('email', $user->email)->first();
         if($existingUser){
@@ -84,7 +86,5 @@ class LoginController extends Controller
         return redirect()->to('/home');
         // $user->token;
     }
-}
-
 
 }
