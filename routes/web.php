@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacy.policy');
+Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('terms.and.conditions');
