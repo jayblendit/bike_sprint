@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('Login') }}
+
+
+            </div>
 
                 <div class="form-group row">
                     <div class="col-md-8 offset-md-4">
@@ -13,12 +16,13 @@
                                     {{ __('LogIn with Facebook') }}
                                 </a>
 
-                                <a href="#" class="btn btn-primary">
+                                <a href="{{ route('google.redirect') }}" class="btn btn-primary">
                                     {{ __('LogIn with Gmail') }}
                                 </a>
                                
                             </div>
                 </div>
+
 
 
                 <div class="card-body">

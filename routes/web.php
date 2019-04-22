@@ -18,5 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacy.policy');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('terms.and.conditions');
+
+
+
+Route::get('/google/redirect', 'Auth\LoginController@googleRedirectToProvider')->name('google.redirect');
+Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallback')->name('google.callback');
+
+
