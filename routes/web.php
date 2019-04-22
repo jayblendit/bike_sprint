@@ -32,6 +32,5 @@ Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name(
 Route::get('/google/redirect', 'Auth\LoginController@googleRedirectToProvider')->name('google.redirect');
 Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallback')->name('google.callback');
 
-Route::get('/facebook/redirect', 'SocialAuthFacebookController@redirect')->name('facebook.redirect');
-Route::get('/facebook/callback', 'SocialAuthFacebookController@callback')->name('facebook.callback');
-
+Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
+Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
