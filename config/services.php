@@ -44,9 +44,9 @@ return [
         ],
 
     'facebook' => [
-       'client_id' => '396975470899380',
-       'client_secret' => 'd72f72848f487d0c18cc3fe598827daf',
-       'redirect' => 'http://localhost:8000/callback',
+       'client_id' => env('FB_APP_ID'),
+       'client_secret' => env('FB_APP_SECRET'),
+       'redirect' => env('FB_APP_REDIRECT'),
       ],
     ],
 
