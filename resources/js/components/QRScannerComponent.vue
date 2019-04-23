@@ -12,7 +12,7 @@
         <a href="#" class="btn btn-primary mx-auto">Proceed</a>
         <br/>
         <br/>
-        <a href="#" class="btn btn-primary mx-auto">Skip</a>
+        <a href="/lobby" class="btn btn-primary mx-auto">Skip</a>
     </div>
 </template>
 
