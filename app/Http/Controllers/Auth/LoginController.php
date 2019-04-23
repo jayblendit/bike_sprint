@@ -103,6 +103,8 @@ class LoginController extends Controller
             $create['name'] = $user->getName();
             $create['email'] = $user->getEmail();
             $create['facebook_id'] = $user->getId();
+            $create['google_id'] = 0;
+            $create['password'] = bcrypt('password123');
 
             $userModel = new User;
             $createdUser = $userModel->addNew($create);
