@@ -27,4 +27,6 @@ Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name(
 Route::get('/google/redirect', 'Auth\LoginController@googleRedirectToProvider')->name('google.redirect');
 Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallback')->name('google.callback');
 
+Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
+
 
