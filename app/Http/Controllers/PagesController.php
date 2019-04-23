@@ -13,4 +13,8 @@ class PagesController extends Controller
    public function termsAndconditions(){
    		return view('pages.terms-and-conditions');
    }
+
+   public function lobby(){
+   		return view('pages.lobby');
+   }
 }

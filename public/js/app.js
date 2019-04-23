@@ -37849,7 +37849,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "a",
-        { staticClass: "btn btn-primary mx-auto", attrs: { href: "#" } },
+        { staticClass: "btn btn-primary mx-auto", attrs: { href: "/lobby" } },
         [_vm._v("Skip")]
       )
     ],
@@ -50316,8 +50316,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/jaypaulaying/Documents/workspace/dev/bike_sprint/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jaypaulaying/Documents/workspace/dev/bike_sprint/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\bike_sprint\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\bike_sprint\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
