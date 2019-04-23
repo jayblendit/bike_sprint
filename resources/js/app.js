@@ -8,6 +8,15 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import { QrcodeStream, QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader'
+
+Vue.component('qr-reader', {
+  components: {
+    QrcodeStream,
+    QrcodeDropZone,
+    QrcodeCapture
+  },
+))
 
 /**
  * The following block of code may be used to automatically register your
