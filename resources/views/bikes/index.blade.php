@@ -6,7 +6,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Bike Serial</h5>
-                <a href="#" class="btn btn-primary mx-auto">Scan QR Code</a>
+                <qrcode-stream @decode="onDecode"></qrcode-stream>
                 <br/>
                  <br/>
                 <label for="basic-url">or Enter Bike Serial</label>
