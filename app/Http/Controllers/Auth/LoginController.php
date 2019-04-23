@@ -108,7 +108,8 @@ class LoginController extends Controller
 
             $userModel = new User;
             $createdUser = $userModel->addNew($create);
-            Auth::loginUsingId($createdUser->id);
+            // Auth::loginUsingId($createdUser->id);
+            auth()->login($createdUser, true);
 
             return redirect()->route('home');
 
