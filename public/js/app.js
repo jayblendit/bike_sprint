@@ -1842,6 +1842,10 @@ __webpack_require__.r(__webpack_exports__);
         }).then(function (_ref) {
           var data = _ref.data;
           console.log(data);
+
+          if (data.status === 'ok') {
+            window.location = '/lobby';
+          }
         })["catch"](function (data) {
           console.log(error);
         });
