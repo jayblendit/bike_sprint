@@ -52,6 +52,9 @@
                         }
                    ).then(({ data }) => {
                         console.log(data);
+                        if(data.status === 'ok'){
+                            window.location = '/lobby'
+                        }
                    }).catch(function (data) {
                         console.log(error)
                    })
