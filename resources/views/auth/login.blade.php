@@ -12,7 +12,7 @@
 
                 <div class="form-group row">
                     <div class="col-md-8 offset-md-4">
-                                <a href="#" class="btn btn-primary">
+                                <a href="{{ route('facebook.redirect')}}" class="btn btn-primary">
                                     {{ __('LogIn with Facebook') }}
                                 </a>
 

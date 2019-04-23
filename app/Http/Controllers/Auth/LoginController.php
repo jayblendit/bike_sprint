@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Socialite;
+use App\User;
 class LoginController extends Controller
 {
     /*
@@ -75,9 +76,11 @@ class LoginController extends Controller
         } else {
             // create a new user
             $newUser                  = new User;
+            $newUser->password        = bcrypt('password123');
             $newUser->name            = $user->name;
             $newUser->email           = $user->email;
             $newUser->google_id       = $user->id;
+            $newUser->facebook_id     = 0;
             $newUser->avatar          = $user->avatar;
             $newUser->avatar_original = $user->avatar_original;
             $newUser->save();
@@ -87,4 +90,33 @@ class LoginController extends Controller
         // $user->token;
     }
 
-}
+    public function facebookRedirectToProvider()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    public function facebookHandleProviderCallback()
+    {
+
+        try{
+            $user = Socialite::driver('facebook')->user();
+            $create['name'] = $user->getName();
+            $create['email'] = $user->getEmail();
+            $create['facebook_id'] = $user->getId();
+
+            $userModel = new User;
+            $createdUser = $userModel->addNew($create);
+            Auth::loginUsingId($createdUser->id);
+
+            return redirect()->route('home');
+
+
+        } catch (Exception $e) {
+            return redirect('auth/facebook');
+        }
+
+    }
+
+
+
+ }
