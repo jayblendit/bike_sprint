@@ -9,7 +9,7 @@
               <input type="text" class="form-control" v-model="decodedContent" placeholder="Enter Bike Serial" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <br/>
-        <a href="#" class="btn btn-primary mx-auto">Proceed</a>
+        <button class="btn btn-primary mx-auto" @click="validateSerial()">Proceed</button>
         <br/>
         <br/>
         <a href="/lobby" class="btn btn-primary mx-auto">Skip</a>
@@ -41,6 +41,23 @@
             onDecode (content) {
               this.decodedContent = content
             },
+
+            validateSerial(){
+              if(this.decodedContent.length > 0){
+                   let bikeSerialCheckOrStoreUrl = '/api/bikes/store';
+                   window.axios.post(
+                        bikeSerialCheckOrStoreUrl,
+                        {
+                            serial_number: this.decodedContent
+                        }
+                   ).then(({ data }) => {
+                        console.log(data);
+                   }).catch(function (data) {
+                        console.log(error)
+                   })
+
+              }  
+            }
         }
 
     }

@@ -1833,6 +1833,19 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     onDecode: function onDecode(content) {
       this.decodedContent = content;
+    },
+    validateSerial: function validateSerial() {
+      if (this.decodedContent.length > 0) {
+        var bikeSerialCheckOrStoreUrl = '/api/bikes/store';
+        window.axios.post(bikeSerialCheckOrStoreUrl, {
+          serial_number: this.decodedContent
+        }).then(function (_ref) {
+          var data = _ref.data;
+          console.log(data);
+        })["catch"](function (data) {
+          console.log(error);
+        });
+      }
     }
   }
 });
@@ -37838,8 +37851,15 @@ var render = function() {
       _c("br"),
       _vm._v(" "),
       _c(
-        "a",
-        { staticClass: "btn btn-primary mx-auto", attrs: { href: "#" } },
+        "button",
+        {
+          staticClass: "btn btn-primary mx-auto",
+          on: {
+            click: function($event) {
+              return _vm.validateSerial()
+            }
+          }
+        },
         [_vm._v("Proceed")]
       ),
       _vm._v(" "),
