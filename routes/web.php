@@ -32,4 +32,4 @@ Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallbac
 Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
 Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
 Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
-
+Route::get('/create', 'PagesController@create')->name('create');

@@ -17,4 +17,8 @@ class PagesController extends Controller
    public function lobby(){
    		return view('pages.lobby');
    }
+
+    public function create(){
+   		return view('pages.create');
+	}	
 }
