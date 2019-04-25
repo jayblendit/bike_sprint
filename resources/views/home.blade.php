@@ -41,9 +41,12 @@
                                 <a href="#" class="btn btn-primary">
                                     {{ __('PROCEED') }}
                                 </a>
+                                
+                                <a href="https://laravel.com/docs">Skip</a>
                         </div>
                     </div>
-                        <a href="https://laravel.com/docs">Skip</a>
+
+                        
 
             </div>
         </div>
