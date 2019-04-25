@@ -18,6 +18,11 @@ class PagesController extends Controller
    		return view('pages.lobby');
    }
 
+
+    public function create(){
+   		return view('pages.create');
+	}	
+
    public function ranking(){
    		return view('pages.ranking5k');
    }
