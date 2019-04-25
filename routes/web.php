@@ -19,10 +19,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/redirect', 'SocialAuthFacebookController@redirect');
-Route::get('/callback', 'SocialAuthFacebookController@callback');
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/lobby', 'PagesController@lobby')->name('lobby');
+
 
 Route::get('/ranking', 'PagesController@ranking')->name('ranking');
 Route::get('/rankingg', 'PagesController@rankingg')->name('rankingg');
@@ -32,6 +33,7 @@ Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacy.po
 
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('terms.and.conditions');
 
+
 Route::get('/lobby', 'PagesController@lobby')->name('lobby');
 
 Route::get('/google/redirect', 'Auth\LoginController@googleRedirectToProvider')->name('google.redirect');
@@ -39,10 +41,26 @@ Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallbac
 
 Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
 
+Route::get('/google/redirect', 'Auth\LoginController@googleRedirectToProvider')->name('google.redirect');
+Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallback')->name('google.callback');
+
+Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
+
+
 Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
 Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
 
+
+
+Route::get('/redirect', 'SocialAuthFacebookController@redirect');
+Route::get('/callback', 'SocialAuthFacebookController@callback');
+
+Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
+
+Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
+
 Route::get('/create', 'PagesController@create')->name('create');
+
 
 
 
