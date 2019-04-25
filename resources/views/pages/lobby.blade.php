@@ -14,7 +14,7 @@
 		<div class="form-group row"> 
 			  <div class="col-md-7 offset-md-5">
 
-			      	<a href="#" class="btn btn-primary">
+			      	<a href="{{ route('ranking')}}" class="btn btn-primary">
 			      	    {{ __('Ranking') }}
 			      	</a>
 

@@ -17,4 +17,16 @@ class PagesController extends Controller
    public function lobby(){
    		return view('pages.lobby');
    }
+
+   public function ranking(){
+   		return view('pages.ranking5k');
+   }
+
+   public function rankingg(){
+   		return view('pages.ranking10k');
+   }
+
+   public function rankinggg(){
+   		return view('pages.ranking15k');
+   }
 }
