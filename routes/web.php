@@ -39,4 +39,4 @@ Route::get('/create', 'PagesController@create')->name('create');
 
 Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callbac');
 
->>>>>>> cec45e05e96b61d12a1e4cc91862f2d1577b1cf2
+
