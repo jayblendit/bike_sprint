@@ -16,15 +16,13 @@
 Route::get('/', function () {
     return redirect()->route('login');
 });
-
+	
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lobby', 'PagesController@lobby')->name('lobby');
 
-Route::get('/ranking', 'PagesController@ranking')->name('ranking');
-Route::get('/rankingg', 'PagesController@rankingg')->name('rankingg');
-Route::get('/rankinggg', 'PagesController@rankinggg')->name('rankinggg');
+Route::get('/ranking/{distance?}', 'PagesController@ranking')->name('ranking');
 
 Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacy.policy');
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('terms.and.conditions');

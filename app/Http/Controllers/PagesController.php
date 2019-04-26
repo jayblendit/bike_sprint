@@ -23,15 +23,7 @@ class PagesController extends Controller
    		return view('pages.create');
 	}	
 
-   public function ranking(){
-   		return view('pages.ranking5k');
-   }
-
-   public function rankingg(){
-   		return view('pages.ranking10k');
-   }
-
-   public function rankinggg(){
-   		return view('pages.ranking15k');
+   public function ranking($distance = "5"){
+   		return view('pages.ranking', array('distance' => $distance));
    }
 }

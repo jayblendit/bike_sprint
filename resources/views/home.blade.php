@@ -43,7 +43,7 @@
                                 </a>
                         </div>
                     </div>
-                        <a href="https://laravel.com/docs">Skip</a>
+                        <a href="https://laravel.com/docs\\">Skip</a>
 
             </div>
         </div>
