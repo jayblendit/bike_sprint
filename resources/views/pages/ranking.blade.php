@@ -6,8 +6,8 @@
 		<div class="form-group row"> 
 			  <div class="col-md-7 offset-md-5">
                     <a class="btn btn-primary" href="{{ route('ranking')}}">5k</a>
-                    <a class="btn btn-primary" href="{{ route('rankingg')}}">10k</a>
-                    <a class="btn btn-primary" href="{{ route('rankinggg')}}">15k</a>
+                    <a class="btn btn-primary" href="#">10k</a>
+                    <a class="btn btn-primary" href="#">15k</a>
                    
 			  </div>
 		</div>
