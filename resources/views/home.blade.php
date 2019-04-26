@@ -45,8 +45,12 @@
                                 <a href="https://laravel.com/docs">Skip</a>
                         </div>
                     </div>
+<<<<<<< HEAD
 
                         
+=======
+                        <a href="https://laravel.com/docs\\">Skip</a>
+>>>>>>> 56259242eaa4d0255aaab67568a62f7b9df233c5
 
             </div>
         </div>
