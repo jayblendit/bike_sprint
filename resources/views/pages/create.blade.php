@@ -1,6 +1,8 @@
 @extends('layouts.app2')
 
 @section('content')
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5">
@@ -11,7 +13,7 @@
                         <div class="form-group row">
                             <label for="Title" class="col-sm-3 col-form-label font-weight-bold">Title: </label>
                                 <div class="col-sm-8">
-                                    <input type="title" class="form-control" id="inputTitle" placeholder="Title">
+                                <input type="text" name="#" class="form-control">
                                 </div>    
                             </div>
 
@@ -30,12 +32,12 @@
                         <div class="form-group row">
                             <label for="Players" class="col-sm-3 col-form-label font-weight-bold">Players: </label>
                                 <div class="col-sm-8">
-                                    <input type="players" class="form-control" id="inputPlayers" placeholder="Players">
-                                    </div>
-                            </div>
+                                    <input type="text" name="#" class="form-control">
+                                </div>
+                        </div>
                             
-                        <div class="mx-auto" style="width: 50px;">
-                                <button type="submit" class="btn btn-primary">Create</button>
+                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                <button type="submit" class="btn btn-outline-primary">Create</button>
                             </div>
                     </form>
                 </div>              

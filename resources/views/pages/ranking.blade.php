@@ -5,9 +5,9 @@
 <div class="container">  
 		<div class="form-group row"> 
 			  <div class="col-md-7 offset-md-5">
-                    <a class="btn btn-primary" href="{{ route('ranking')}}">5k</a>
-                    <a class="btn btn-primary" href="{{ route('rankingg')}}">10k</a>
-                    <a class="btn btn-primary" href="{{ route('rankinggg')}}">15k</a>
+                    <a class="btn btn-outline-primary" href="{{ route('ranking')}}">5k</a>
+                    <a class="btn btn-outline-primary" href="{{ route('ranking')}}">10k</a>
+                    <a class="btn btn-outline-primary" href="{{ route('ranking')}}">15k</a>
                    
 			  </div>
 		</div>
@@ -42,36 +42,3 @@
             </div>
 @endsection
 <!-- <div class="row"> 
-
-        <div class="col-sm-4 col-4">
-            <p>Place</p>
-
-            <div class="row">
-                <div class="col-sm-4 col-4">
-                <p>1</p>
-                </div>
-            </div>  
-        </div>
-
-          
-        <div class="col-sm-4 col-4">
-            <p>Name</p>
-               
-            <div class="row">
-                <div class="col-sm-4 col-4">
-                <p>dave</p>
-                 </div>
-            </div>
-        </div>
-
-          
-        <div class="col-sm-4 col-4">
-            <p>Time in 5k</p>
-               
-            <div class="row">       
-                <div class="col-sm-4 col-4">
-                <p>00:30:00</p>
-                </div>
-            </div>
-        </div>  
-    </div>-->
