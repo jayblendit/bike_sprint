@@ -16,8 +16,10 @@
 
                     You are logged in!
                     </div>
+
                     
                
+                        <a href="https://laravel.com/docs\\">Skip</a>
             </div>
         </div>
     </div>
