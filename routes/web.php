@@ -39,4 +39,4 @@ Route::get('/callback', 'SocialAuthFacebookController@callback');
 
 Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
 
-Route::get('/create', 'PagesController@create')->name('create');
+Route::get('/game/create', 'PagesController@create')->name('create');
