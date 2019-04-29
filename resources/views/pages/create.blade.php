@@ -39,6 +39,10 @@
                             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                 <button type="submit" class="btn btn-outline-primary">Create</button>
                             </div>
+
+                            <div class="mx-auto" style="width: 50px;">
+                                <button type="button" class="btn btn-primary">Cancel</button>
+                            </div>
                     </form>
                 </div>              
             </div>

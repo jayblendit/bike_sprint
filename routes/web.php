@@ -16,6 +16,10 @@
 Route::get('/', function () {
     return redirect()->route('login');
 });
+
+Route::group(['middleware' => ['auth']], function () {
+  Route::get('/profile', 'UsersController@profile')->name('user.profile');
+});
 	
 Auth::routes();
 
@@ -34,8 +38,6 @@ Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallbac
 
 Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
 Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
-Route::get('/redirect', 'SocialAuthFacebookController@redirect');
-Route::get('/callback', 'SocialAuthFacebookController@callback');
 
 Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
 
