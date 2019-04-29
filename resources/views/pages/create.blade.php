@@ -38,6 +38,10 @@
                                 <a class="btn btn-primary" href="#" role="button">Create</a>
                                 <a class="btn btn-primary" href="lobby" role="button">Cancel</a>
                             </div>
+
+                            <div class="mx-auto" style="width: 50px;">
+                                <button type="button" class="btn btn-primary">Cancel</button>
+                            </div>
                     </form>
                 </div>              
             </div>
