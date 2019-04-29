@@ -22,4 +22,26 @@ class BikesController extends Controller
     	return response()->json(['status'=>'ok','message'=>'Bike serial saved.']);
 
     }
+
+    public function rpm(Request $request){
+        $bike = Bike::where('serial_number', $request->serial_number)->first();
+
+        if($bike){
+            $bike->rpm = $request->rpm;
+            $bike->save();
+
+            $response = [
+                'status'=>'ok',
+                'message'=>'Bike rpm saved.'
+            ];
+        }else{
+            $response = [
+                'status'=>'ko',
+                'message'=>'No bike found.'
+            ];
+        }
+
+        return response()->json($response);
+
+    }
 }
