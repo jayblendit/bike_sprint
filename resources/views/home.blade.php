@@ -42,16 +42,10 @@
                                     {{ __('PROCEED') }}
                                 </a>
                                 
-                                <a href="https://laravel.com/docs">Skip</a>
+                                <a href="/lobby" class="btn btn-primary mx-auto">Skip</a>
                         </div>
                     </div>
-<<<<<<< HEAD
-
-                        
-=======
-                        <a href="https://laravel.com/docs\\">Skip</a>
->>>>>>> 56259242eaa4d0255aaab67568a62f7b9df233c5
-
+                       
             </div>
         </div>
     </div>
