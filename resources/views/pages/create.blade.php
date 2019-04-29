@@ -39,7 +39,7 @@
                             </div>
 
                             <div class="mx-auto" style="width: 50px;">
-                                <button type="submit" class="btn btn-primary">Cancel</button>
+                                <button type="button" class="btn btn-primary">Cancel</button>
                             </div>
                     </form>
                 </div>              
