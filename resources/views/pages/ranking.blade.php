@@ -2,6 +2,7 @@
 @section('content')
 <div class="container"> 
 	<div class="form-group row"> 
+		<a class="btn btn-primary" href="{{ route('lobby')}}">Back To Lobby</a>
 		<div class="col-md-7 offset-md-5">
 			<a class="btn btn-primary" href="{{ route('ranking')}}/5">5k</a>
 			<a class="btn btn-primary" href="{{ route('ranking')}}/10">10k</a>
