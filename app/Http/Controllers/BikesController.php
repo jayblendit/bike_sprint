@@ -40,8 +40,23 @@ class BikesController extends Controller
                 'message'=>'No bike found.'
             ];
         }
-
         return response()->json($response);
+    }
 
+    public function getRpm(Request $request){
+        $bike = Bike::where('serial_number', $request->serial_number)->first();
+
+        if($bike){
+            $response = [
+                'status'=>'ok',
+                'rpm'=> $bike->rpm
+            ];
+        }else{
+            $response = [
+                'status'=>'ko',
+                'message'=>'No bike found.'
+            ];
+        }
+        return response()->json($response);
     }
 }

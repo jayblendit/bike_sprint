@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCreateInLobbiesTable extends Migration
+class CreateBikeGamesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateCreateInLobbiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('create_in_lobbies', function (Blueprint $table) {
+        Schema::create('bike_games', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('distance');
-            $table->text('players');
+            $table->integer('distance_id');
+            $table->integer('created_by');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateCreateInLobbiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('create_in_lobbies');
+        Schema::dropIfExists('bike_games');
     }
 }
