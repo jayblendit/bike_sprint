@@ -14,7 +14,7 @@ class AddStatusColumnInBikeGamesTable extends Migration
     public function up()
     {
         Schema::table('bike_games', function (Blueprint $table) {
-            //
+            $table->string('status');
         });
     }
 
