@@ -1,6 +1,7 @@
 @extends('layouts.app2')
 @section('content')
 <div class="container"> 
+
 	<a class="btn btn-primary" href="{{ route('lobby')}}">Back To Lobby</a>
 	<br>
 	<div class="form-group row"> 

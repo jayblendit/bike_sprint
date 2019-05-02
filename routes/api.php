@@ -18,7 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => ['auth:api']], function () {
-  Route::post('/bike/rpm', 'BikesController@rpm')->name('bike.rpm');
+  Route::post('/bike/rpm', 'BikesController@rpm');
+  Route::get('/bike/{serial_number}', 'BikesController@getRpm');
 });
 
 Route::post('/bikes/store', 'BikesController@store');
