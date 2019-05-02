@@ -17,9 +17,16 @@
                     You are logged in!
                     </div>
 
-                    
-               
-                        <a href="https://laravel.com/docs\\">Skip</a>
+
+
+                    <div class="form-group row">
+                        <div class="col-md-8 offset-md-4">
+                                <a href="#" class="btn btn-primary">
+                                    {{ __('PROCEED') }}
+                                </a>
+                                
+                                <a href="/lobby" class="btn btn-primary mx-auto">Skip</a>
+                        </div>
             </div>
         </div>
     </div>
