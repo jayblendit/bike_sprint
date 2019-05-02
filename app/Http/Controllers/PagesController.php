@@ -21,7 +21,7 @@ class PagesController extends Controller
 
     public function create(){
    		return view('pages.create');
-	}	
+	  }	
 
    public function ranking(Request $request){
       if (!$request->distance){
@@ -31,5 +31,5 @@ class PagesController extends Controller
         $distance = $request->distance;
       }
    		return view('pages.ranking', array('distance' => $distance));
-   }
+    }  
 }
