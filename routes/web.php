@@ -62,6 +62,8 @@ Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
 
 Route::get('/create', 'PagesController@create')->name('create');
 
+Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
+
 
 
 

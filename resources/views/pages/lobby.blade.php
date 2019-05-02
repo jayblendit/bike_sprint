@@ -20,10 +20,10 @@
 							<a href="{{ route('create')}}" class="btn btn-primary">
 			                   {{ __('Create') }}
 			        </a>
-							
 			  </div>
 		</div>
-</div>	
+</div>
+
 
 <br>
 
