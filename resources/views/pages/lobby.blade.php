@@ -24,10 +24,10 @@
 							<a href="{{ route('create')}}" class="btn btn-outline-primary">
 			                   {{ __('Create') }}
 			        </a>
-							
 			  </div>
 		</div>
-</div>	
+</div>
+
 
 <br>
 
