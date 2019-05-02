@@ -13,7 +13,7 @@
 		<div class="form-group row"> 
 			  <div class="col-md-7 offset-md-5">
 
-			      	<a href="{{ route('ranking')}}" class="btn btn-outline-primary">
+			      	<a href="{{ route('ranking')}}/5k" class="btn btn-outline-primary">
 			      	    {{ __('Ranking') }}
 			      	</a>
 
