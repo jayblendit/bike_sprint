@@ -1,4 +1,17 @@
 @extends('layouts.app2')
+<<<<<<< HEAD
+@section('content')
+<div class="container"> 
+	<br>
+	<div class="form-group row"> 
+		<a class="btn btn-primary" href="{{ route('lobby')}}">Back To Lobby</a>
+		<div class="col-md-7 offset-md-5">
+			<a class="btn btn-primary" href="{{ route('ranking')}}/5">5k</a>
+			<a class="btn btn-primary" href="{{ route('ranking')}}/10">10k</a>
+			<a class="btn btn-primary" href="{{ route('ranking')}}/15">15k</a>
+		</div>
+	</div>
+=======
 
 @section('content')
 
@@ -12,6 +25,7 @@
 			    <a class="btn btn-primary" href="{{ route('ranking')}}/15k">15k</a>
 		    </div>
 	    </div>
+>>>>>>> be2e366d1bccd6d6c05bd52802a1ab65c05e2675
 </div>	
 
 <div class="container">

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDistancesTable extends Migration
+class AddStatusColumnInBikeGamesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateDistancesTable extends Migration
      */
     public function up()
     {
-        Schema::create('distances', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->decimal('distance');
-            $table->string('unit');
-            $table->timestamps();
+        Schema::table('bike_games', function (Blueprint $table) {
+            $table->string('status');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateDistancesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('distances');
+        Schema::table('bike_games', function (Blueprint $table) {
+            //
+        });
     }
 }
