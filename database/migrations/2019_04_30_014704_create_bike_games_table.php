@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -18,6 +18,7 @@ class CreateBikeGamesTable extends Migration
             $table->string('title');
             $table->integer('distance_id');
             $table->integer('created_by');
+            $table->string('status');
             $table->timestamps();
         });
     }
