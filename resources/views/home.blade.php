@@ -7,33 +7,16 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <div class="card-body">
+                         @if (session('status'))
+                             <div class="alert alert-success" role="alert">
+                                 {{ session('status') }}
+                             </div>
+                         @endif
 
                     You are logged in!
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-md-8 offset-md-4">
-                        <a href="#" class="btn btn-primary">
-                                    {{ __('Scan QR Code') }}
-                      </a>
-                   </div>
-               </div>
-
-
-                <div class="form-group row">
-                    <div class="col-md-12 col-sm-12 col-md-12">
-                         <div class="form-group">
-                            <br>or</br>
-                                <strong> Enter Bike Serial:</strong>
-                                <input type="text" name="serial_number" class="form-control">
                     </div>
-            </div>
+
 
 
                     <div class="form-group row">
@@ -44,14 +27,7 @@
                                 
                                 <a href="https://laravel.com/docs">Skip</a>
                         </div>
-                    </div>
-<<<<<<< HEAD
-
-                        
-=======
-                        <a href="https://laravel.com/docs\\">Skip</a>
->>>>>>> 56259242eaa4d0255aaab67568a62f7b9df233c5
-
+                    </div>         
             </div>
         </div>
     </div>

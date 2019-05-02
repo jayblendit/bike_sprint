@@ -19,11 +19,17 @@ class PagesController extends Controller
    }
 
 
-   public function create(){
+    public function create(){
    		return view('pages.create');
-	}	
+	  }	
 
-   public function ranking(){
-   	return view('pages.ranking');
-    }
+   public function ranking(Request $request){
+      if (!$request->distance){
+        $distance = 5;
+      }
+      else{
+        $distance = $request->distance;
+      }
+   		return view('pages.ranking', array('distance' => $distance));
+    }  
 }
