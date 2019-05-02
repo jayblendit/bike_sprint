@@ -13,11 +13,15 @@
 		<div class="form-group row"> 
 			  <div class="col-md-7 offset-md-5">
 
-			      	<a href="{{ route('ranking')}}" class="btn btn-primary">
+<<<<<<< HEAD
+			      	<a href="{{ route('ranking')}}/5" class="btn btn-primary">
+=======
+			      	<a href="{{ route('ranking')}}/5k" class="btn btn-outline-primary">
+>>>>>>> be2e366d1bccd6d6c05bd52802a1ab65c05e2675
 			      	    {{ __('Ranking') }}
 			      	</a>
 
-							<a href="{{ route('create')}}" class="btn btn-primary">
+							<a href="{{ route('create')}}" class="btn btn-outline-primary">
 			                   {{ __('Create') }}
 			        </a>
 							
@@ -31,30 +35,24 @@
 
   <table class="table table-hover table-bordered ">
 
-    <thead>
+ <thead>
       <tr>
         <th style="width:15%" class="text-center">No. of Players</th>
         <th style="width:55%" class="text-center">Title</th>
         <th style="width:50%" class="text-center">Status</th>
       </tr>
-    </thead>
+ </thead> 
     
-    <tbody>
+<tbody>		
       <tr>
-        <td class="text-center">#1</td>
-        <td class="text-center">Join 1</td>
-        <td class="text-center">Status 1</td>
+          <td>1</td>
+          <td>Join!</td>
+          <td>Status 1</td>
       </tr>
-      <tr>	
-        <td class="text-center">#2</td>
-        <td class="text-center">Join 2</td>
-        <td class="text-center">Status 2</td>
-      </tr>
-    </tbody>
+</tbody> 
   </table>
-
 </div>
- 
+ @endsection
 	<!-- <div class="container">  
 	  	<div class="row">
 
@@ -111,5 +109,5 @@
 
 		</div>
 	</div>-->
-@endsection
+
 
