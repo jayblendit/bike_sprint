@@ -46,4 +46,4 @@ Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCal
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/callback', 'SocialAuthFacebookController@callback');
 
-Route::get('/create', 'PagesController@create')->name('create');
+Route::get('/game/create', 'PagesController@create')->name('create');
