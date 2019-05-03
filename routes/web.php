@@ -46,4 +46,13 @@ Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCal
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/callback', 'SocialAuthFacebookController@callback');
 
+
+Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
+Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
+
+
+Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
+
+Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
 Route::get('/game/create', 'PagesController@create')->name('create');
+
