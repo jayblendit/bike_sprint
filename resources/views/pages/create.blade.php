@@ -31,12 +31,13 @@
                         <div class="form-group row">
                             <label for="Players" class="col-sm-3 col-form-label font-weight-bold">Players: </label>
                                 <div class="col-sm-8">
-                                    <input type="players" name="no_of_players" class="form-control" id="inputPlayers" placeholder="Players">
+                                    <input type="no_of_players" name="no_of_players" class="form-control" id="inputPlayers" placeholder="Players">
                                 </div>
                             </div>
                             
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                <a type="submit" class="btn btn-primary" href="#" role="button">Create</a>
+                                <button type="submit" class="btn btn-primary"> Create </button>
+                                <!-- <a type="submit" class="btn btn-primary" href="{{route('bikegames.index')}}" role="button">Create</a>  -->
                                 <a type="submit" class="btn btn-primary" href="lobby" role="button">Cancel</a>
                             </div>
                     </form>
