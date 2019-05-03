@@ -14,18 +14,6 @@ class DeleteCreateInLobbiesTable extends Migration
     public function up()
     {
         Schema::dropIfExists('create_in_lobbies_table');
-        
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('lobbies', function (Blueprint $table) {
-            //
-        });
-    }
 }
