@@ -36,12 +36,8 @@
                             </div>
                             
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary" href="#" role="button">Create</a>
-                                <a class="btn btn-primary" href="lobby" role="button">Cancel</a>
-                            </div>
-
-                            <div class="mx-auto" style="width: 50px;">
-                                <button type="button" class="btn btn-primary">Cancel</button>
+                                <a type="submit" class="btn btn-primary" href="#" role="button">Create</a>
+                                <a type="submit" class="btn btn-primary" href="lobby" role="button">Cancel</a>
                             </div>
                     </form>
                 </div>              
