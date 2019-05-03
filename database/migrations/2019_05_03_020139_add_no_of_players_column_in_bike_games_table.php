@@ -26,7 +26,7 @@ class AddNoOfPlayersColumnInBikeGamesTable extends Migration
     public function down()
     {
         Schema::table('bike_games', function (Blueprint $table) {
-            //
+            $table->dropColumn('no_of_players');
         });
     }
 }
