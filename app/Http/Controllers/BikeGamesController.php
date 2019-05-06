@@ -17,14 +17,13 @@ class BikeGamesController extends Controller
     		$bikegame->no_of_players = $request->no_of_players;
     		$bikegame->save();
     	
+   		return redirect()->route('lobby');
+	}	
 
-    	return redirect()->route('bikegames.index');
-	}
-	
 	public function index()
 	{
 		$bike_games = BikeGame::all();
 		//return redirect('/bikegames/index')->with(compact('bike_games'));
-		return view('bike_games.index')->with(compact('bike_games'));
+		return view('lobby')->with(compact('bike_games'));
 	}
 }
