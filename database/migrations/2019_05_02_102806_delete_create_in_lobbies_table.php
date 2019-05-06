@@ -13,7 +13,7 @@ class DeleteCreateInLobbiesTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('create_in_lobbies_table');
+        Schema::dropIfExists('create_in_lobbies');
     }
 
 }
