@@ -18,12 +18,12 @@ class BikeGamesController extends Controller
     		$bikegame->save();
     	
    		return redirect()->route('lobby');
-	}	
+}	
 
 	public function index()
 	{
 		$bike_games = BikeGame::all();
 		//return redirect('/bikegames/index')->with(compact('bike_games'));
-		return view('lobby')->with(compact('bike_games'));
+		return view('bike_games.index')->with(compact('bike_games'));
 	}
 }
