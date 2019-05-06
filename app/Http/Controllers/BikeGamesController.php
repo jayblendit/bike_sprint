@@ -11,11 +11,20 @@ class BikeGamesController extends Controller
     	
     		$bikegame = new Bikegame;
     		$bikegame->title = $request->title;
-    		$bikegame->distance_id = 1;
-    		$bikegame->no_of_player = $request->no_of_players;
+			$bikegame->distance_id = 1;
+			$bikegame->created_by = 1;
+			$bikegame->status = 1;
+    		$bikegame->no_of_players = $request->no_of_players;
     		$bikegame->save();
     	
 
-    	return redirect()->route('lobby');
-    }
+    	return redirect()->route('bikegames.index');
+	}
+	
+	public function index()
+	{
+		$bike_games = BikeGame::all();
+		//return redirect('/bikegames/index')->with(compact('bike_games'));
+		return view('bike_games.index')->with(compact('bike_games'));
+	}
 }

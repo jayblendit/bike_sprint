@@ -33,26 +33,17 @@ Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name(
 
 Route::get('/ranking/{distance?}', 'PagesController@ranking')->name('ranking');
 
-Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
-
 Route::get('/google/redirect', 'Auth\LoginController@googleRedirectToProvider')->name('google.redirect');
 Route::get('/google/callback', 'Auth\LoginController@googleHandleProviderCallback')->name('google.callback');
 
-
 Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
 Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
-
 
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/callback', 'SocialAuthFacebookController@callback');
 
-
-Route::get('/facebook/redirect', 'Auth\LoginController@facebookRedirectToProvider')->name('facebook.redirect');
-Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCallback')->name('facebook.callback');
-
-
 Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
-
-Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
 Route::get('/game/create', 'PagesController@create')->name('create');
 
+Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
+Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
