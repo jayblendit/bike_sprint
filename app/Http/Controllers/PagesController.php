@@ -34,4 +34,8 @@ class PagesController extends Controller{
   }
     return view('pages.ranking', array('distance' => $distance));
   } 
+  
+  public function bikegame_match(){
+    return view('pages.bikegame_match');
+  }
 }
