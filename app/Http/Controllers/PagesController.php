@@ -8,15 +8,6 @@ use App\BikeGame;
 
 class PagesController extends Controller{
 
-<<<<<<< HEAD
-    public function termsAndconditions(){
-   		return view('pages.terms-and-conditions');
-    }
-
-    public function lobby(){
-    	return view('pages.lobby');
-    }
-=======
   public function privacyPolicy(){
     return view('pages.privacy-policy');
   }
@@ -24,24 +15,17 @@ class PagesController extends Controller{
   public function termsAndconditions(){
      return view('pages.terms-and-conditions');
   }
->>>>>>> master
 
   public function lobby(){
     $bikeGames = BikeGame::all();
     return view('pages.lobby', ['bikeGames'=>$bikeGames]);
   }
 
-<<<<<<< HEAD
-    public function create(){
-      $distances = Distance::all();
-      return view('pages.create', ['distance_id'=>$distances]);
-	  }	
-=======
->>>>>>> master
 
   public function create(){
-    return view('pages.create');
-  }	
+      $distances = Distance::all();
+      return view('pages.create', ['distance_id'=>$distances]);
+    } 
 
   public function ranking(Request $request){
     if (!$request->distance){
