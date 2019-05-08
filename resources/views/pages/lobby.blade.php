@@ -39,14 +39,15 @@
         <th style="width:50%" class="text-center">Status</th>
       </tr>
  </thead> 
-    
+    @foreach($bikeGames as $bg)
 <tbody>		
       <tr>
-          <td>1</td>
-          <td>Join!</td>
-          <td>Status 1</td>
+          <td>{{ $bg->no_of_players }}</td>
+          <td>{{ $bg->title }}</td>
+          <td>{{ $bg->status }}</td>
       </tr>
 </tbody> 
+		@endforeach
   </table>
 </div>
  @endsection
