@@ -34,4 +34,5 @@ class PagesController extends Controller{
   }
     return view('pages.ranking', array('distance' => $distance));
   } 
+  
 }
