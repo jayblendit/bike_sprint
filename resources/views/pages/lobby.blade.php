@@ -42,10 +42,12 @@
     @foreach($bikeGames as $bg)
 <tbody>		
       <tr>
-          <td>{{ $bg->no_of_players }}</td>
-          <td>{{ $bg->title }}</td>
-          <td>{{ $bg->status }}</td>
-      </tr>
+        	<td>{{ $bg->no_of_players }}</td>
+          	<td>{{ $bg->title }}</td>
+          	<td align="center">{{ $bg->status }}
+          			<button type="button" class="btn btn-outline-primary text-center" style="width: 50%">Join</button> 
+		 	</td>
+		</tr>
 </tbody> 
 		@endforeach
   </table>
