@@ -32,4 +32,10 @@ class BikeGamesController extends Controller
 	$distances = Distance::all();
 	return view('pages.create', ['distances'=>$distances]);
   }	
+
+	public function bikeGamesMatch(){
+    	return view('bike_games.match');
+
+	}
+	
 }
