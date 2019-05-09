@@ -26,4 +26,9 @@ class BikeGamesController extends Controller
 		//return redirect('/bikegames/index')->with(compact('bike_games'));
 		return view('bike_games.index')->with(compact('bike_games'));
 	}
+
+	public function bikeGamesMatch(){
+    	return view('bike_games.match');
+
+	}
 }
