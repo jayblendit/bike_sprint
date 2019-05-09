@@ -18,7 +18,7 @@
 			      	    {{ __('Ranking') }}
 			      	</a>
 
-							<a href="{{ route('create')}}" class="btn btn-outline-primary">
+							<a href="{{ route('bikegames.create')}}" class="btn btn-outline-primary">
 			                   {{ __('Create') }}
 			        </a>
 			  </div>

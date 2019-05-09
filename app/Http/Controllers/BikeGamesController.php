@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Bikegame;
+use App\Distance;
 
 class BikeGamesController extends Controller
 {
@@ -27,8 +28,14 @@ class BikeGamesController extends Controller
 		return view('bike_games.index')->with(compact('bike_games'));
 	}
 
+	public function create(){
+	$distances = Distance::all();
+	return view('pages.create', ['distances'=>$distances]);
+  }	
+
 	public function bikeGamesMatch(){
     	return view('bike_games.match');
 
 	}
+	
 }
