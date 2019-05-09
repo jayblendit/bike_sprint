@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Distance;
 use Illuminate\Http\Request;
 use App\BikeGame;
 
@@ -22,8 +23,9 @@ class PagesController extends Controller{
 
 
   public function create(){
-    return view('pages.create');
-  }	
+      $distances = Distance::all();
+      return view('pages.create', ['distance_id'=>$distances]);
+    } 
 
   public function ranking(Request $request){
     if (!$request->distance){
