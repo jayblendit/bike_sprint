@@ -43,7 +43,7 @@ Route::get('/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/callback', 'SocialAuthFacebookController@callback');
 
 Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
-Route::get('/game/create', 'BikeGamesController@create')->name('create');
+Route::get('/bikegames/create', 'BikeGamesController@create')->name('bikegames.create');
 
 Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
 Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
