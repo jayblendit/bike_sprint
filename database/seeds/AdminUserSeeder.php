@@ -18,7 +18,7 @@ class AdminUserSeeder extends Seeder
             'email' => Str::random(10).'@gmail.com',
             'password' => bcrypt('secret'),
             'google_id'=>0,
-        		'facebook_id'=>0,
+            'facebook_id'=>0,
             'is_admin' => Str::random(10),
         ]);
     }
