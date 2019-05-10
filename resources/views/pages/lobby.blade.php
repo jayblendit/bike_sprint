@@ -42,8 +42,8 @@
     @foreach($bikeGames as $bg)
 <tbody>		
       <tr>
-        	<td>{{ $bg->no_of_players }}</td>
-          	<td>{{ $bg->title }}</td>
+        	<td style="width:15%" class="text-center">{{ $bg->no_of_players }}</td>
+          	<td style="width:15%" class="text-center">{{ $bg->title }}</td>
           	<td align="center">{{ $bg->status }}
           			<button type="button" class="btn btn-outline-primary text-center" style="width: 50%">Join</button> 
 		 	</td>
@@ -55,24 +55,19 @@
  @endsection
 	<!-- <div class="container">  
 	  	<div class="row">
-
 	   		<div class="col-sm-3 col-4">
 			   <p>No. of Players</p>
-
 			   		<div class="row">
 					   <div class="col-sm-3 col-4">
 					   		<p>#1</p>
 						</div>
 					</div>	
-
 					<div class="row">
 					   <div class="col-sm-3 col-4">
 					   		<p>#2</p>
 						</div>
 					</div>	
-
 			</div>
-
 			<div class="col-sm-6 col-4">
 			   <p>Title</p>
 			   
@@ -81,15 +76,12 @@
 						   <p>Join1!</p>
 						</div>
 					</div>
-
 					<div class="row">
 					   <div class="col-sm-6 col-4">
 					   		<p>Join2!</p>
 						</div>
 					</div>	
-
 			</div>
-
 			<div class="col-sm-3 col-2">
 			   <p>Status</p>
 			   
@@ -98,16 +90,11 @@
 						   <p>*Status1*</p>
 						</div>
 					</div>	
-
 					<div class="row">
 					   <div class="col-sm-3 col-2">
 					   		<p>*Status2*</p>
 						</div>
 					</div>	
-
 			</div>
-
 		</div>
 	</div>-->
-
-
