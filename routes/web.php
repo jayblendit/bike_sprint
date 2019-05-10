@@ -24,11 +24,9 @@ Route::group(['middleware' => ['auth']], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/lobby', 'PagesController@lobby')->name('lobby');
 
 Route::get('/privacy-policy', 'PagesController@privacyPolicy')->name('privacy.policy');
-
 Route::get('/terms-and-conditions', 'PagesController@termsAndConditions')->name('terms.and.conditions');
 
 Route::get('/ranking/{distance?}', 'PagesController@ranking')->name('ranking');
@@ -48,3 +46,5 @@ Route::get('/bikegames/create', 'BikeGamesController@create')->name('bikegames.c
 Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
 Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
 Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
+
+Route::get('/distancelist', 'PagesController@distancelist')->name('distancelist');
