@@ -59,4 +59,9 @@ class BikesController extends Controller
         }
         return response()->json($response);
     }
+
+    public function bikeslist(){
+        return view('bikes.bikeslist');
+    
+    } 
 }
