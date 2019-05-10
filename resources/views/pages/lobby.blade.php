@@ -45,7 +45,7 @@
         	<td style="width:15%" class="text-center">{{ $bg->no_of_players }}</td>
           	<td style="width:15%" class="text-center">{{ $bg->title }}</td>
           	<td align="center">{{ $bg->status }}
-          			<button type="button" class="btn btn-outline-primary text-center" style="width: 50%">Join</button> 
+          		<a class="btn btn-outline-primary text-center" style="width: 50%" href="{{ route('bikegames.match')}}">Join</a> 
 		 	</td>
 		</tr>
 </tbody> 
