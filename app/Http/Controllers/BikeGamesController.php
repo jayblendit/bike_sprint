@@ -18,7 +18,7 @@ class BikeGamesController extends Controller
     		$bikegame->no_of_players = $request->no_of_players;
     		$bikegame->save();
     	
-   		return redirect()->route('lobby');
+   		return redirect()->route('bikegames.match');
 }	
 
 	public function index()
