@@ -48,3 +48,5 @@ Route::get('/bikegames/create', 'BikeGamesController@create')->name('bikegames.c
 Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
 Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
 Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
+
+Route::get('/bikeslist', 'PagesController@BikesList')->name('bikeslist');
