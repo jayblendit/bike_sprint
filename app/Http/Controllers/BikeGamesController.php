@@ -12,9 +12,9 @@ class BikeGamesController extends Controller
     	
     		$bikegame = new Bikegame;
     		$bikegame->title = $request->title;
-			$bikegame->distance_id = 1;
-			$bikegame->created_by = 1;
-			$bikegame->status = 1;
+				$bikegame->distance_id = 1;
+				$bikegame->created_by = 1;
+				$bikegame->status = 1;
     		$bikegame->no_of_players = $request->no_of_players;
     		$bikegame->save();
     	

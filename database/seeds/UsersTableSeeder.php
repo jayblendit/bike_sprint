@@ -19,6 +19,7 @@ class UsersTableSeeder extends Seeder
         'google_id'=>0,
         'facebook_id'=>0,
         'password'=>bcrypt('admin123')
+        'is_admin'=>true,
       ]);
     }
 }
