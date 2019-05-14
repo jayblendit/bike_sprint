@@ -26,16 +26,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-
                 <a class="navbar-brand" href="{{ route('bikes.index') }}">
-
-
-                <a class="navbar-brand" href="{{ url('/') }}">
-                  Bikes
-                </a>
-                <a class="navbar-brand" href="{{ url('/') }}">
-
-                <a class="navbar-brand" href="{{ url('bikeslist') }}">
                   Bikes
                 </a>
                 <a class="navbar-brand" href="{{ route('distances.index')}}">

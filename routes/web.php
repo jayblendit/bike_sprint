@@ -48,10 +48,11 @@ Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.ind
 Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
 
 
-Route::get('/bikes', 'BikesController@index')->name('bikes.index');
-
-
 Route::get('/distances', 'DistancesController@index')->name('distances.index');
+Route::get('/bikes', 'BikesController@index')->name('bikes.index');
+//Route::get('/bikeslist', 'PagesController@BikesList')->name('bikeslist');
+
+
 
 
 
