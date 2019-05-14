@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
 	
-	<a href="{{ route('distances.add') }}" class="btn btn-primary">Add distances</a>
+	<h1>Distance List</h1>
 
 </div>
 
