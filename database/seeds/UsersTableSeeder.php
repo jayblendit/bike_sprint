@@ -18,7 +18,8 @@ class UsersTableSeeder extends Seeder
         'email'=>'admin@bikesprint.ee',
         'google_id'=>0,
         'facebook_id'=>0,
-        'password'=>bcrypt('admin123')
+        'password'=>bcrypt('admin123'),
+        'is_admin'=>true,
       ]);
     }
 }
