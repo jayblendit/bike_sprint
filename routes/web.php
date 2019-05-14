@@ -42,11 +42,11 @@ Route::get('/facebook/callback', 'Auth\LoginController@facebookHandleProviderCal
 Route::get('/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/callback', 'SocialAuthFacebookController@callback');
 
-Route::get('/bikes/serial', 'BikesController@index')->name('bike.serial');
+Route::get('/bikes/serial', 'BikesController@getSerial')->name('bike.serial');
 Route::get('/bikegames/create', 'BikeGamesController@create')->name('bikegames.create');
 
 Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
 Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
 Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
 
-Route::get('/bikes', 'BikesController@bikeslist')->name('bikes.bikeslist');
+Route::get('/bikes', 'BikesController@index')->name('bikes.index');

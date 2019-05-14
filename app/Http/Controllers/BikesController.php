@@ -7,8 +7,8 @@ use App\Bike;
 
 class BikesController extends Controller
 {
-    public function index(){
-    	return view('bikes.index');
+    public function getSerial(){
+    	return view('bikes.get-serial');
     }
 
     public function store(Request $request){
@@ -60,8 +60,8 @@ class BikesController extends Controller
         return response()->json($response);
     }
 
-    public function bikeslist(){
-        return view('bikes.bikeslist');
+    public function index(){
+        return view('bikes.index');
     
     } 
 }
