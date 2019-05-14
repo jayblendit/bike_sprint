@@ -26,17 +26,19 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-<<<<<<< HEAD
+
+                <a class="navbar-brand" href="{{ route('bikes.index') }}">
+
+
                 <a class="navbar-brand" href="{{ url('/') }}">
                   Bikes
                 </a>
                 <a class="navbar-brand" href="{{ url('/') }}">
-=======
+
                 <a class="navbar-brand" href="{{ url('bikeslist') }}">
                   Bikes
                 </a>
                 <a class="navbar-brand" href="{{ route('distances.index')}}">
->>>>>>> 68ff5aea03b05a3b379cf46e04d65b01a9b8d6a7
                     Distances
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
