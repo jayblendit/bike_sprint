@@ -36,9 +36,10 @@
                             </div>
                             
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary"> Create </button>
+                                
                                 <!-- <a type="submit" class="btn btn-primary" href="{{route('bikegames.index')}}" role="button">Create</a>  -->
-                                <a class="btn btn-primary" href="/lobby" role="button">Cancel</a>
+                                <a class="btn btn-warning" href="/lobby" role="button">Cancel</a>
+                                <button type="submit" class="btn btn-primary"> Create </button>
                             </div>
                     </form>
                 </div>              
