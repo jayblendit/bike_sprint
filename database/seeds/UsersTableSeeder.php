@@ -6,7 +6,7 @@ use App\User;
 
 class UsersTableSeeder extends Seeder
 {
-     /**
+    /**
      * Run the database seeds.
      *
      * @return void
@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
         'email'=>'admin@bikesprint.ee',
         'google_id'=>0,
         'facebook_id'=>0,
-        'password'=>bcrypt('admin123'),
+        'password'=>bcrypt('admin123')
         'is_admin'=>true,
       ]);
     }
