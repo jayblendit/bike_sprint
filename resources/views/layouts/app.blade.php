@@ -26,12 +26,16 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
-                <a class="navbar-brand" href="{{ route('bikes.index') }}">
-                  Bikes
-                </a>
+            @if (Auth::check())
+                <a class="navbar-brand" href="{{ url('/') }}">
+
+                <a class="navbar-brand" href="{{ url('bikeslist') }}">
+                  Bikes</a>
                 <a class="navbar-brand" href="{{ route('distances.index')}}">
-                    Distances
-                </a>
+                    Distances</a>
+            @else
+
+            @endif
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
