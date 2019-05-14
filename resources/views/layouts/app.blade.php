@@ -25,16 +25,15 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
-                </a>
-            @if (Auth::check())
                 <a class="navbar-brand" href="{{ url('/') }}">
-
+            @if (Auth::check() && Auth::user()->is_admin)
                 <a class="navbar-brand" href="{{ url('bikeslist') }}">
-                  Bikes</a>
+                  Bikes
+                </a>
                 <a class="navbar-brand" href="{{ route('distances.index')}}">
-                    Distances</a>
-            @else
 
+                    Distances
+                </a>
             @endif
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
