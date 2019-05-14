@@ -49,5 +49,5 @@ Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bike
 
 Route::get('/distances', 'DistancesController@index')->name('distances.index');
 
-Route::get('/bikes', 'PagesController@BikesList')->name('bikes');
+Route::get('/bikes', 'BikesController@index')->name('bikes.index');
 //Route::get('/bikeslist', 'PagesController@BikesList')->name('bikeslist');
