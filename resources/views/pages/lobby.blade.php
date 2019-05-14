@@ -35,18 +35,20 @@
  <thead>
       <tr>
         <th style="width:15%" class="text-center">No. of Players</th>
-        <th style="width:55%" class="text-center">Title</th>
-        <th style="width:50%" class="text-center">Status</th>
+        <th style="width:40%" class="text-center">Title</th>
+        <th style="width:30%" class="text-center">Status</th>
+        <th style="width:30%" class="text-center">Action</th>
       </tr>
  </thead> 
     @foreach($bikeGames as $bg)
 <tbody>		
-      <tr>
+      	<tr>
         	<td style="width:15%" class="text-center">{{ $bg->no_of_players }}</td>
           	<td style="width:15%" class="text-center">{{ $bg->title }}</td>
-          	<td align="center">{{ $bg->status }}
-          		<a class="btn btn-outline-primary text-center" style="width: 50%" href="{{ route('bikegames.match')}}">Join</a> 
-		 	</td>
+          	<td style="width:15%" class="text-center">{{ $bg->status }}</td>
+          	<td style="width:30%" class="text-center">
+          		<a class="btn btn-outline-primary text-center" style="width: 50%" href="{{ route('bikegames.match')}}">Join</a>
+          	</td> 
 		</tr>
 </tbody> 
 		@endforeach
