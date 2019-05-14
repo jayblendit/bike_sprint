@@ -47,4 +47,8 @@ Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.stor
 Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
 Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
 
+<<<<<<< HEAD
 Route::get('/distances', 'DistancesController@index')->name('distances.index');
+=======
+Route::get('/bikeslist', 'PagesController@BikesList')->name('bikeslist');
+>>>>>>> master
