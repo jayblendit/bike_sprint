@@ -27,7 +27,7 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
 
-                <a class="navbar-brand" href="{{ url('bikeslist') }}">
+                <a class="navbar-brand" href="{{ route('bikes.index')}}">
                   Bikes
                 </a>
                 <a class="navbar-brand" href="{{ route('distances.index')}}">
