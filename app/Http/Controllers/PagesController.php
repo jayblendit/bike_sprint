@@ -35,14 +35,12 @@ class PagesController extends Controller{
       $distance = $request->distance;
   }
     return view('pages.ranking', array('distance' => $distance));
-<<<<<<< HEAD
+
   }   
-=======
-  }
 
   public function BikesList(){
     return view('pages.bikeslist');
   } 
   
->>>>>>> master
+
 }
