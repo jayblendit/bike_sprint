@@ -10,7 +10,7 @@ class DistancesController extends Controller
      return view('distances.index');
   }
 
-  public function add(){
-     return view('distances.addDistances');
+  public function create(){
+     return view('distances.create');
   }
 }
