@@ -47,9 +47,24 @@
           	<td style="width:15%" class="text-center">{{ $bg->title }}</td>
           	<td style="width:15%" class="text-center">{{ $bg->status }}</td>
           	<td style="width:30%" class="text-center">
-          		<a class="btn btn-outline-primary text-center" style="width: 50%" href="{{ route('bikegames.match')}}">Join</a>
+          		
+			@if (Auth::check() && Auth::user()->serial_number)
+          		<a href="{{ route('bikegames.match')}}">
+          		<button type="submit" id="join" style="width:50%">Join</button>
+          		</a>
+          	@endif
           	</td> 
 		</tr>
+	<!--<script>
+    	$(document).ready(function () {
+        $("#skip").on('click', function () {
+        	if (!$bike->serial_number){
+            $("#join").hide();
+        	}
+
+            });
+    	});
+	</script>-->
 </tbody> 
 		@endforeach
   </table>
