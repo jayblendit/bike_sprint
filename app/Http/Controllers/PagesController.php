@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Distance;
 use Illuminate\Http\Request;
+
+use Session;
+use App\Distance;
 use App\BikeGame;
+use App\Bike;
 
 class PagesController extends Controller{
 
@@ -16,8 +19,17 @@ class PagesController extends Controller{
      return view('pages.terms-and-conditions');
   }
 
-  public function lobby(){
-    $bikeGames = BikeGame::all();
+  public function lobby(Request $request){
+    if ($request->serial_number!=null) {
+        $bike = Bike::where('serial_number', $request->serial_number)->first();
+        if ($bike) {
+            session()->put('serial_number', $bike->serial_number);
+        }  
+        else{
+            session()->put('serial_number', null);
+        } 
+    }
+    $bikeGames = BikeGame::all(); 
     return view('pages.lobby', ['bikeGames'=>$bikeGames]);
   }
 
