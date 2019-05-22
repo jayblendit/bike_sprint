@@ -50,7 +50,6 @@
 			@if (Auth::check() && Session::has('serial_number'))
           		<a href="{{ route('bikegames.match')}}">
           		<button type="submit" id="join" style="width:50%">Join</button>
-  
           		</a>
           	@endif
           	</td> 
