@@ -12,7 +12,7 @@
         <button class="btn btn-primary mx-auto" @click="validateSerial()">Proceed</button>
         <br/>
         <br/>
-        <a href="/lobby" class="btn btn-primary mx-auto">Skip</a>
+        <a href="/lobby" id="skip" class="btn btn-primary mx-auto">Skip</a>
     </div>
 </template>
 
@@ -65,3 +65,5 @@
 
     }
 </script>
+
+
