@@ -53,7 +53,7 @@
                    ).then(({ data }) => {
                         console.log(data);
                         if(data.status === 'ok'){
-                            window.location = '/lobby'
+                            window.location = '/lobby?serial_number='+this.decodedContent;
                         }
                    }).catch(function (data) {
                         console.log(error)
