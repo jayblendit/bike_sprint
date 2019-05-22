@@ -24,7 +24,7 @@ class BikeGamesController extends Controller
 	public function index()
 	{
 		$bike_games = BikeGame::all();
-		//return redirect('/bikegames/index')->with(compact('bike_games'));
+		 //return redirect('/bikegames/index')->with(compact('bike_games'));
 		return view('bike_games.index')->with(compact('bike_games'));
 	}
 
