@@ -7088,7 +7088,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".qrcode-stream{display:flex;flex-flow:row nowrap;justify-content:space-around;align-items:center}.qrcode-stream__inner-wrapper{position:relative;max-width:100%;max-height:100%;z-index:0}.qrcode-stream__overlay,.qrcode-stream__tracking-layer{position:absolute;width:100%;height:100%;top:0;left:0}.qrcode-stream__camera,.qrcode-stream__pause-frame{display:block;object-fit:contain;max-width:100%;max-height:100%}.qrcode-reader{display:flex;flex-flow:row nowrap;justify-content:space-around;align-items:center}.qrcode-reader__inner-wrapper{position:relative;max-width:100%;max-height:100%;z-index:0}.qrcode-reader__overlay,.qrcode-reader__tracking-layer{position:absolute;width:100%;height:100%;top:0;left:0}.qrcode-reader__camera,.qrcode-reader__pause-frame{display:block;object-fit:contain;max-width:100%;max-height:100%}", ""]);
+exports.push([module.i, ".qrcode-stream{display:flex;flex-flow:row nowrap;justify-content:space-around;align-items:center}.qrcode-stream__inner-wrapper{position:relative;max-width:100%;max-height:100%;z-index:0}.qrcode-stream__overlay,.qrcode-stream__tracking-layer{position:absolute;width:100%;height:100%;top:0;left:0}.qrcode-stream__camera,.qrcode-stream__pause-frame{display:block;-o-object-fit:contain;object-fit:contain;max-width:100%;max-height:100%}.qrcode-reader{display:flex;flex-flow:row nowrap;justify-content:space-around;align-items:center}.qrcode-reader__inner-wrapper{position:relative;max-width:100%;max-height:100%;z-index:0}.qrcode-reader__overlay,.qrcode-reader__tracking-layer{position:absolute;width:100%;height:100%;top:0;left:0}.qrcode-reader__camera,.qrcode-reader__pause-frame{display:block;-o-object-fit:contain;object-fit:contain;max-width:100%;max-height:100%}", ""]);
 
 // exports
 
@@ -38795,7 +38795,10 @@ var render = function() {
       _vm._v(" "),
       _c(
         "a",
-        { staticClass: "btn btn-primary mx-auto", attrs: { href: "/lobby" } },
+        {
+          staticClass: "btn btn-primary mx-auto",
+          attrs: { href: "/lobby", id: "skip" }
+        },
         [_vm._v("Skip")]
       )
     ],
@@ -52593,8 +52596,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/jaypaulaying/Sites/bike_sprint/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jaypaulaying/Sites/bike_sprint/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\bike_sprint\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\bike_sprint\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

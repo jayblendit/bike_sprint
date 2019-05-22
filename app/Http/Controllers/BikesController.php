@@ -21,6 +21,9 @@ class BikesController extends Controller
 
     	return response()->json(['status'=>'ok','message'=>'Bike serial saved.']);
 
+        $data=$request->input();
+        $request->sesion()->put('SerialKey', $data);
+        $serialnum=$request->session()->get('SerialKey');           
     }
 
     public function rpm(Request $request){
