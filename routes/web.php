@@ -41,11 +41,12 @@ Route::get('/redirect', 'SocialAuthFacebookController@redirect');
 Route::get('/callback', 'SocialAuthFacebookController@callback');
 
 Route::get('/bikes/serial', 'BikesController@getSerial')->name('bike.serial');
-Route::get('/bikegames/create', 'BikeGamesController@create')->name('bikegames.create');
 
-Route::post('/bikegame/store', 'BikeGamesController@store')->name('bikegame.store');
+Route::post('/bikegames/store', 'BikeGamesController@store')->name('bikegames.store');
+Route::get('/bikegames/match/{id}/leave', 'BikeGamesController@bikeGameMatchLeave')->name('bikegames.leave');
+Route::get('/bikegames/create', 'BikeGamesController@create')->name('bikegames.create');
 Route::get('/bikegames/index', 'BikeGamesController@index')->name('bikegames.index');
-Route::get('/bikegames/match', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
+Route::get('/bikegames/match/{id}', 'BikeGamesController@bikeGamesMatch')->name('bikegames.match');
 
 Route::get('/distances/create', 'DistancesController@create')->name('distances.create');
 Route::get('/distances', 'DistancesController@index')->name('distances.index');
