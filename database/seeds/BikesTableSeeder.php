@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 use App\Bike;
 
 class BikesTableSeeder extends Seeder
-{
+{adasdasdasdasdasdassdasd
     /**
      * Run the database seeds.
      *
