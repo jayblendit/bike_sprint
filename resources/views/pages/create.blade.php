@@ -29,9 +29,9 @@
                             </div>
                            
                         <div class="form-group row">
-                            <label for="Players" class="col-sm-3 col-form-label font-weight-bold">Players: </label>
+                            <label for="Players" class="col-sm-3 col-form-label font-weight-bold">No. of Players: </label>
                                 <div class="col-sm-8">
-                                    <input type="no_of_players" name="no_of_players" class="form-control" id="inputPlayers" placeholder="Players">
+                                    <input type="number" name="no_of_players" class="form-control" id="inputPlayers" placeholder="Players">
                                 </div>
                             </div>
                             
