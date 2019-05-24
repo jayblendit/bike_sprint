@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOC<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -27,8 +27,8 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 @if (Auth::check() && Auth::user()->is_admin)
-                <a class="navbar-brand" href="{{ route('bikes.index') }}">Bikes</a>
-                <a class="navbar-brand" href="{{ route('distances.index')}}">Distances</a>
+                    <a class="navbar-brand" href="{{ route('bikes.index') }}">Bikes</a>
+                    <a class="navbar-brand" href="{{ route('distances.index')}}">Distances</a>
                 @endif
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
