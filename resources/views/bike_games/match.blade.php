@@ -5,10 +5,17 @@
 	<div class="row">
 	   	<div class="col-sm-5 col-4">
 			<h2>BikeGame Match Page</h2>
-		</div> 
+      </div> 
 	</div>
 </div>
-	
+<div class="container">
+  <div class="form-group row"> 
+    <div class="col-md-7 offset-md-12">
+      <a class="btn btn-primary" href="#" role="button">Leave Room</a>
+    </div>
+  </div>
+</div>
+
 <div class="container"> 	
 	<table class="table">
   		<thead class="thead-light">
@@ -43,6 +50,17 @@
     	</div>
     </div>
 </div>
+
+<!--<div class="container">
+  <div class="form-group row"> 
+    <div class="col-md-10 offset-md-8">
+      <a class="btn btn-primary" type="text-right" href="#" role="button">Leave Room</a>
+    </div>
+  </div>
+</div>-->
+
+
+
 
 
 @endsection
