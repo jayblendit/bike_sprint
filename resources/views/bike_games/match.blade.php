@@ -11,7 +11,7 @@
 <div class="container">
   <div class="form-group row"> 
     <div class="col-md-7 offset-md-12">
-      <a class="btn btn-primary" href="#" role="button">Leave Room</a>
+      <a class="btn btn-primary" href="{{ route('bikegames.leave', ['id'=>$match->id]) }}" role="button">Leave Room</a>
     </div>
   </div>
 </div>

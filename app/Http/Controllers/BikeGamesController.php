@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Bikegame;
 use App\Distance;
+use Auth;
 
 class BikeGamesController extends Controller
 {
@@ -31,8 +32,21 @@ class BikeGamesController extends Controller
 	  return view('bike_games.create', ['distances'=>$distances]);
   }	
 
-	public function bikeGamesMatch(){
-    return view('bike_games.match');
+	public function bikeGamesMatch(Request $request){
+    $match = BikeGame::find($request->id);
+    return view('bike_games.match', compact('match'));
 	}
-	
+
+  public function bikeGameMatchLeave(Request $request){
+    $match = BikeGame::find($request->id);
+
+    //check who creates the match
+    if($match->created_by === Auth::user()->id){
+      $match->delete();
+      return redirect()->route('lobby');
+    }else{
+      //remove the player from match players
+      return redirect()->route('lobby');
+    }
+  }
 }
