@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-body">
     
-                   <form action="{{route('bikegame.store')}}" method="post">
+                   <form action="{{route('bikegames.store')}}" method="post">
                     @csrf
                         <div class="form-group row">
                             <label for="Title" class="col-sm-3 col-form-label font-weight-bold">Title: </label>
