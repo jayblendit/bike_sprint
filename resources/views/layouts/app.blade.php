@@ -60,6 +60,13 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                @if (Session::has('serial_number'))  
+                                    <div class="container">
+                                        <div role="alert">
+                                            <strong>Serial no:</strong> {{ Session::get('serial_number') }}
+                                        </div>   
+                                    </div>
+                                @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
