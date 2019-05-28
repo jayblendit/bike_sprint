@@ -20,8 +20,8 @@
 	<table class="table">
   		<thead class="thead-light">
     		<tr>
-      			<th scope="col" class="text-center">Game Title</th>
-      			<th scope="col" class="text-center">Target:   Distance</th>
+      			<th scope="col" class="text-center"><strong>Game Title:</strong> {{ $match->title }} </th>
+      			<th scope="col" class="text-center"><strong>Target: Distance</strong> {{ $match->distance_id }} </th>
     		</tr>
   		</thead>
   	</table>
@@ -32,10 +32,10 @@
     		<div class="card-body">
       			<h5 class="position text-center">Position: 1st</h5>
       			<h5 class="rpm text-center"> (RPM)</h5>
-      			<h5 class="distance text-center"> (Distance) </h5>
+      			<h5 class="distance text-center"> (Distance) {{ $match->distance_id }} </h5>
      		</div>
     		<div class="card-footer">
-      			<small class="font-weight-bold">Player 1: (Name)</small>
+      			<small class="font-weight-bold">Player 1: {{ $match->created_by }}</small>
     		</div>
   		</div>
   	
