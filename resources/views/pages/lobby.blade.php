@@ -17,10 +17,13 @@
 
 			      	    {{ __('Ranking') }}
 			      	</a>
-
+						
+						@if (Auth::check() && Session::has('serial_number'))
 							<a href="{{ route('bikegames.create')}}" class="btn btn-outline-primary">
 			                   {{ __('Create') }}
-			        </a>
+			        		</a>
+			        	@endif
+
 			  </div>
 		</div>
 </div>
