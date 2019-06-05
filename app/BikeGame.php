@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class BikeGame extends Model
 {
-   protected $guarded = [];
+  protected $guarded = [];
+
+   public function distance(){
+    return $this->belongsTo('App\Distance', 'distance_id');   
+   }
+    
 }

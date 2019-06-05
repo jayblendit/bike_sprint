@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-use App\Bikegame;
+
+use App\BikeGame;
 use App\Distance;
 use Auth;
 
@@ -11,7 +14,7 @@ class BikeGamesController extends Controller
 {
 
   public function store(Request $request){
-  	$bikegame = new Bikegame;
+  	$bikegame = new BikeGame;
   	$bikegame->title = $request->title;
 		$bikegame->distance_id = 1;
 		$bikegame->created_by = 1;
@@ -32,10 +35,11 @@ class BikeGamesController extends Controller
 	  return view('bike_games.create', ['distances'=>$distances]);
   }	
 
-	public function bikeGamesMatch(Request $request){
-    $match = BikeGame::find($request->id);
-    return view('bike_games.match', compact('match'));
-	}
+	public function bikeGamesMatch(Request $request){ 
+      $match = BikeGame::find($request->id);
+      return view('bike_games.match', compact("match"));
+}    
+	
 
   public function bikeGameMatchLeave(Request $request){
     $match = BikeGame::find($request->id);
